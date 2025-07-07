@@ -9,6 +9,7 @@ export default function TabLayout() {
         options={{
           title: 'Inicio',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+          headerShown: true,
         }} />
       <Tabs.Screen
         name="settings"
@@ -21,6 +22,13 @@ export default function TabLayout() {
         options={{
           title: 'Perfil',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />,
+        }} />
+      <Tabs.Screen
+        name="(tareas)"
+        options={{
+          title: 'Tareas',
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="list-alt" color={color} />,
+          headerShown: false,
         }} />
     </Tabs>
   );
